@@ -50,6 +50,10 @@
       <Name>ts_OcPagado .rdl</Name>
       <FullPath>ts_OcPagado .rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>cp_OrdenPagoEmitida.rdl</Name>
+      <FullPath>cp_OrdenPagoEmitida.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
