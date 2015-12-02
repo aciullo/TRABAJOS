@@ -27,6 +27,14 @@
       <FullPath>cp_NotasCreditosProv.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>cp_OP_Aplicado .rdl</Name>
+      <FullPath>cp_OP_Aplicado .rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cp_OP_Emitida.rdl</Name>
+      <FullPath>cp_OP_Emitida.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>cp_ResumenCompra.rdl</Name>
       <FullPath>cp_ResumenCompra.rdl</FullPath>
     </ProjectItem>
@@ -47,12 +55,8 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ts_OcPagado .rdl</Name>
-      <FullPath>ts_OcPagado .rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>cp_OrdenPagoEmitida.rdl</Name>
-      <FullPath>cp_OrdenPagoEmitida.rdl</FullPath>
+      <Name>cp_OP_Emitida_Prov.rdl</Name>
+      <FullPath>cp_OP_Emitida_Prov.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -66,6 +70,7 @@
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
+        <StartItem>cp_OP_Emitida.rdl</StartItem>
       </Options>
     </Configuration>
     <Configuration>
