@@ -35,6 +35,10 @@
       <FullPath>cp_OP_Emitida.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>cp_OP_Emitida_Prov.rdl</Name>
+      <FullPath>cp_OP_Emitida_Prov.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>cp_ResumenCompra.rdl</Name>
       <FullPath>cp_ResumenCompra.rdl</FullPath>
     </ProjectItem>
@@ -55,8 +59,8 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>cp_OP_Emitida_Prov.rdl</Name>
-      <FullPath>cp_OP_Emitida_Prov.rdl</FullPath>
+      <Name>ts_ResumenDetalleDepositos.rdl</Name>
+      <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
