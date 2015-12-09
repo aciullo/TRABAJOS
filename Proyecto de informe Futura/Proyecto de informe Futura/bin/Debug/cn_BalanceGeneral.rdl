@@ -428,7 +428,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Razón Social o Nombres y Apellidos: </Value>
+                      <Value>Razón Social o Nombres y Apellidos:</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <TextDecoration>Underline</TextDecoration>
@@ -439,12 +439,6 @@
                 </Paragraph>
                 <Paragraph>
                   <TextRuns>
-                    <TextRun>
-                      <Value xml:space="preserve"> </Value>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
                     <TextRun>
                       <Value>=First(RTrim(Fields!razón.Value), "DataSet2")</Value>
                       <Style>
@@ -520,6 +514,18 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
                       <Value xml:space="preserve"> </Value>
                       <Style>
                         <FontSize>8pt</FontSize>
@@ -536,7 +542,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ruc</rd:DefaultName>
-              <Top>0.77639cm</Top>
+              <Top>0.81167cm</Top>
               <Left>4.69604cm</Left>
               <Height>1.38847cm</Height>
               <Width>3.84326cm</Width>
@@ -555,7 +561,7 @@
           <KeepTogether>true</KeepTogether>
           <Top>1.63724cm</Top>
           <Left>0.10468cm</Left>
-          <Height>2.16486cm</Height>
+          <Height>2.20014cm</Height>
           <Width>8.60985cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -697,7 +703,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox53</rd:DefaultName>
-              <Top>0.77639cm</Top>
+              <Top>0.79403cm</Top>
               <Left>2.71617cm</Left>
               <Height>1.35319cm</Height>
               <Width>2.23542cm</Width>
@@ -866,7 +872,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>empresa</rd:DefaultName>
-              <Top>0.84694cm</Top>
+              <Top>0.77638cm</Top>
               <Height>1.31792cm</Height>
               <Width>4.55493cm</Width>
               <Style>
@@ -947,7 +953,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ruc</rd:DefaultName>
-              <Top>0.77639cm</Top>
+              <Top>0.74111cm</Top>
               <Left>4.7666cm</Left>
               <Height>1.38847cm</Height>
               <Width>3.73743cm</Width>
@@ -986,44 +992,12 @@
                 </Border>
               </Style>
             </Line>
-            <Textbox Name="Textbox51">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>4- Identificación del auditor</Value>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox47</rd:DefaultName>
-              <Left>8.85544cm</Left>
-              <Height>0.6cm</Height>
-              <Width>6.65598cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
             <Line Name="Line7">
               <Top>0.01764cm</Top>
               <Left>8.60986cm</Left>
               <Height>2.14722cm</Height>
               <Width>0cm</Width>
-              <ZIndex>6</ZIndex>
+              <ZIndex>5</ZIndex>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -1059,11 +1033,11 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ruc</rd:DefaultName>
-              <Top>0.70583cm</Top>
+              <Top>0.74111cm</Top>
               <Left>13.90377cm</Left>
               <Height>1.38847cm</Height>
               <Width>3.73743cm</Width>
-              <ZIndex>7</ZIndex>
+              <ZIndex>6</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1113,7 +1087,7 @@
               <Left>8.81967cm</Left>
               <Height>1.31792cm</Height>
               <Width>4.55493cm</Width>
-              <ZIndex>8</ZIndex>
+              <ZIndex>7</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1129,7 +1103,7 @@
               <Left>13.60034cm</Left>
               <Height>1.45903cm</Height>
               <Width>0cm</Width>
-              <ZIndex>9</ZIndex>
+              <ZIndex>8</ZIndex>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -1140,7 +1114,7 @@
           <KeepTogether>true</KeepTogether>
           <Top>3.83738cm</Top>
           <Left>0.10467cm</Left>
-          <Height>2.16486cm</Height>
+          <Height>2.20014cm</Height>
           <Width>19.74069cm</Width>
           <ZIndex>7</ZIndex>
           <Style>
@@ -1152,6 +1126,39 @@
             </TopBorder>
           </Style>
         </Rectangle>
+        <Textbox Name="Textbox51">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>4- Identificación del auditor</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox47</rd:DefaultName>
+          <Top>3.83738cm</Top>
+          <Left>9.66501cm</Left>
+          <Height>0.6cm</Height>
+          <Width>6.65598cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
       </ReportItems>
       <Style>
         <Border>

@@ -43,7 +43,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cuenta</Value>
+                              <Value>Cuenta En / Sa</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -159,7 +159,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!nombrecuenta.Value</Value>
+                              <Value>=RTrim(Fields!nombrecuenta.Value) &amp; "" &amp; IIf( IsNothing( Fields!nombrecuentaEnt.Value),"", ("/" &amp; Fields!nombrecuentaEnt.Value))</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -307,6 +307,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1675,7 +1676,7 @@
     <Height>4.95194cm</Height>
     <Style />
   </Body>
-  <Width>25.26771cm</Width>
+  <Width>25.26772cm</Width>
   <Page>
     <PageHeader>
       <Height>2.03729cm</Height>
@@ -2025,13 +2026,24 @@ db.nrooperacion
 CASE WHEN DB.idcuenta IS NULL THEN 
 (SELECT rtrim(nombre)+'  '+idmoneda  FROM ts_cuentas	
 WHERE DB.idcuenta_ent= ts_cuentas.idcuenta)
+ELSE CASE WHEN DB.idcuenta_ent IS NULL THEN
+(SELECT rtrim(nombre)+'  '+idmoneda  FROM ts_cuentas	
+WHERE DB.idcuenta= ts_cuentas.idcuenta)
 ELSE
 (SELECT rtrim(nombre)+'  '+idmoneda  FROM ts_cuentas	
 WHERE DB.idcuenta= ts_cuentas.idcuenta)
 END
+END
 nombrecuenta
-,
-db.fecha
+,CASE WHEN DB.idcuenta IS NOT NULL AND DB.idcuenta_ent IS NOT NULL  THEN 
+(SELECT rtrim(nombre)+'  '+idmoneda  FROM ts_cuentas	
+WHERE DB.idcuenta_ent= ts_cuentas.idcuenta)
+ELSE ''
+END
+nombrecuentaEnt
+, db.idcuenta
+, db.idcuenta_ent
+,db.fecha
 , op.descripcion TipoOperacion
 ,op.idoperacion
 ,ISNULL( db.totalcheque,0) totalcheque
@@ -2052,7 +2064,7 @@ db.idempresa=@idempresa
 AND 
 db.fecha Between @dfecha and @hfecha
 
-ORDER BY 2,1</CommandText>
+ORDER BY 2,1,op.descripcion,ech.estado_cheque </CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -2068,9 +2080,21 @@ ORDER BY 2,1</CommandText>
           <DataField>fecha</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+        <Field Name="idcuenta">
+          <DataField>idcuenta</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="nombrecuentaEnt">
+          <DataField>nombrecuentaEnt</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TipoOperacion">
           <DataField>TipoOperacion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idcuenta_ent">
+          <DataField>idcuenta_ent</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="totalcheque">
           <DataField>totalcheque</DataField>

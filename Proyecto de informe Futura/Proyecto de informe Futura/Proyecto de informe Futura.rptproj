@@ -59,12 +59,12 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ts_ResumenDetalleDepositos.rdl</Name>
-      <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
+      <Name>cn_BalanceGeneral.rdl</Name>
+      <FullPath>cn_BalanceGeneral.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>ts_ResumenDetalleDepositos.rdl</Name>
+      <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
