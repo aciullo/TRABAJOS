@@ -15,6 +15,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>cn_BalanceGeneral.rdl</Name>
+      <FullPath>cn_BalanceGeneral.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>cp_ControlCargaOC.rdl</Name>
       <FullPath>cp_ControlCargaOC.rdl</FullPath>
     </ProjectItem>
@@ -59,12 +63,12 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>cn_BalanceGeneral.rdl</Name>
-      <FullPath>cn_BalanceGeneral.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ts_ResumenDetalleDepositos.rdl</Name>
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cn_EstadosResultados.rdl</Name>
+      <FullPath>cn_EstadosResultados.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
