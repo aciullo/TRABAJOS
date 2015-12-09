@@ -70,6 +70,10 @@
       <Name>cn_EstadosResultados.rdl</Name>
       <FullPath>cn_EstadosResultados.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>cn_FlujoEfectivo.rdl</Name>
+      <FullPath>cn_FlujoEfectivo.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
