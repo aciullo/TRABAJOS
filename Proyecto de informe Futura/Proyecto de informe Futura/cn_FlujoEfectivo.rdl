@@ -283,7 +283,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Estados de Flujo de Efectivo</Value>
+                  <Value>Estado de Flujo de Efectivo</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>20pt</FontSize>

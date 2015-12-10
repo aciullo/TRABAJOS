@@ -19,6 +19,14 @@
       <FullPath>cn_BalanceGeneral.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>cn_EstadosResultados.rdl</Name>
+      <FullPath>cn_EstadosResultados.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cn_FlujoEfectivo.rdl</Name>
+      <FullPath>cn_FlujoEfectivo.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>cp_ControlCargaOC.rdl</Name>
       <FullPath>cp_ControlCargaOC.rdl</FullPath>
     </ProjectItem>
@@ -63,16 +71,20 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>ts_ListaCheques.rdl</Name>
+      <FullPath>ts_ListaCheques.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ts_ResumenDetalleDepositos.rdl</Name>
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>cn_EstadosResultados.rdl</Name>
-      <FullPath>cn_EstadosResultados.rdl</FullPath>
+      <Name>ts_ListaChequesCta.rdl</Name>
+      <FullPath>ts_ListaChequesCta.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>cn_FlujoEfectivo.rdl</Name>
-      <FullPath>cn_FlujoEfectivo.rdl</FullPath>
+      <Name>vt_NotasCreditosCli.rdl</Name>
+      <FullPath>vt_NotasCreditosCli.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

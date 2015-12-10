@@ -1081,11 +1081,11 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.23622in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox143">
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -1105,7 +1105,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox143</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1127,7 +1127,7 @@
                 <TablixCell />
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="importe3">
+                    <Textbox Name="importe1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -1146,7 +1146,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>importe3</rd:DefaultName>
+                      <rd:DefaultName>importe1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1162,7 +1162,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox150">
+                    <Textbox Name="Textbox13">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -1179,7 +1179,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox150</rd:DefaultName>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1468,7 +1468,7 @@
             <Value>=Fields!fecha.Value</Value>
           </SortExpression>
         </SortExpressions>
-        <Height>1.85in</Height>
+        <Height>1.83622in</Height>
         <Width>9.94792in</Width>
         <Style />
       </Tablix>
@@ -1818,14 +1818,10 @@
           <QueryParameter Name="@hfecha">
             <Value>=Parameters!hfecha.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@idcuenta">
-            <Value>=Parameters!idcuenta.Value</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandText>SELECT 
 db.nrooperacion
-,
-CASE WHEN DB.idcuenta IS NULL THEN 
+,CASE WHEN DB.idcuenta IS NULL THEN 
 (SELECT rtrim(nombre)+'  '+idmoneda  FROM ts_cuentas	
 WHERE DB.idcuenta_ent= ts_cuentas.idcuenta)
 ELSE CASE WHEN DB.idcuenta_ent IS NULL THEN
@@ -1865,8 +1861,7 @@ where
 db.idempresa=@idempresa
 AND 
 db.fecha Between @dfecha and @hfecha
-AND
-( db.idcuenta= @idcuenta OR db.idcuenta_ent=@idcuenta)
+
 
 ORDER BY 2,1,op.descripcion,ech.estado_cheque </CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
@@ -1939,6 +1934,13 @@ ORDER BY 2,1,op.descripcion,ech.estado_cheque </CommandText>
           <Operator>In</Operator>
           <FilterValues>
             <FilterValue>=Parameters!tipooperacion.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=Fields!idcuenta.Value or Fields!idcuenta_ent.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!idcuenta.Value</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
@@ -2027,7 +2029,7 @@ idempresa=@idempresa</CommandText>
       <Prompt>empresa</Prompt>
     </ReportParameter>
     <ReportParameter Name="idcuenta">
-      <DataType>String</DataType>
+      <DataType>Integer</DataType>
       <Prompt>Cuenta</Prompt>
       <ValidValues>
         <DataSetReference>
