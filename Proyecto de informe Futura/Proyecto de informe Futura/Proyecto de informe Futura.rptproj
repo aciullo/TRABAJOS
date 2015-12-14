@@ -82,6 +82,10 @@
       <Name>ts_ResumenDetalleDepositos.rdl</Name>
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>cc_ResumenCobros.rdl</Name>
+      <FullPath>cc_ResumenCobros.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
