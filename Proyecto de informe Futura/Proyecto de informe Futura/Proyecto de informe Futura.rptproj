@@ -75,16 +75,12 @@
       <FullPath>ts_ListaCheques.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ts_ResumenDetalleDepositos.rdl</Name>
-      <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ts_ListaChequesCta.rdl</Name>
       <FullPath>ts_ListaChequesCta.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>vt_NotasCreditosCli.rdl</Name>
-      <FullPath>vt_NotasCreditosCli.rdl</FullPath>
+      <Name>ts_ResumenDetalleDepositos.rdl</Name>
+      <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -98,7 +94,7 @@
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
-        <StartItem>cp_OP_Emitida.rdl</StartItem>
+        <StartItem>cn_EstadosResultados.rdl</StartItem>
       </Options>
     </Configuration>
     <Configuration>
