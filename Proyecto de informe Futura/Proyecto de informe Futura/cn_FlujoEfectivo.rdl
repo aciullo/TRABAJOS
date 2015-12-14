@@ -259,20 +259,20 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.06944in</Top>
+        <Top>0.31944in</Top>
         <Left>0.06278cm</Left>
         <Height>0.44622in</Height>
         <Width>7.27809in</Width>
         <Style />
       </Tablix>
     </ReportItems>
-    <Height>1.86859cm</Height>
+    <Height>1.94478cm</Height>
     <Style />
   </Body>
-  <Width>19.8811cm</Width>
+  <Width>20.27798cm</Width>
   <Page>
     <PageHeader>
-      <Height>6.16099cm</Height>
+      <Height>6.3462cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -546,7 +546,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox52</rd:DefaultName>
               <Top>0.77639cm</Top>
-              <Height>1.38847cm</Height>
+              <Height>1.12389cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -592,7 +592,7 @@
               <rd:DefaultName>Textbox53</rd:DefaultName>
               <Top>0.79403cm</Top>
               <Left>2.71617cm</Left>
-              <Height>1.35319cm</Height>
+              <Height>1.10625cm</Height>
               <Width>2.23542cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
@@ -609,7 +609,7 @@
           <KeepTogether>true</KeepTogether>
           <Top>1.63724cm</Top>
           <Left>8.71453cm</Left>
-          <Height>2.16487cm</Height>
+          <Height>2.20014cm</Height>
           <Width>5.04473cm</Width>
           <ZIndex>4</ZIndex>
           <Style>
@@ -716,7 +716,7 @@
           <KeepTogether>true</KeepTogether>
           <Top>1.63724cm</Top>
           <Left>13.70501cm</Left>
-          <Height>2.16486cm</Height>
+          <Height>2.20014cm</Height>
           <Width>6.14036cm</Width>
           <ZIndex>6</ZIndex>
           <Style>
@@ -869,7 +869,7 @@
             <Line Name="Line6">
               <Top>0.70583cm</Top>
               <Left>4.62549cm</Left>
-              <Height>1.45903cm</Height>
+              <Height>1.6266cm</Height>
               <Width>0cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
@@ -881,7 +881,7 @@
             <Line Name="Line7">
               <Top>0.01764cm</Top>
               <Left>8.60986cm</Left>
-              <Height>2.14722cm</Height>
+              <Height>2.31479cm</Height>
               <Width>0cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
@@ -922,7 +922,7 @@
               <Top>0.74111cm</Top>
               <Left>13.90377cm</Left>
               <Height>1.38847cm</Height>
-              <Width>3.73743cm</Width>
+              <Width>5.18461cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -987,7 +987,7 @@
             <Line Name="Line8">
               <Top>0.70583cm</Top>
               <Left>13.60034cm</Left>
-              <Height>1.45903cm</Height>
+              <Height>1.6266cm</Height>
               <Width>0cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
@@ -996,11 +996,43 @@
                 </Border>
               </Style>
             </Line>
+            <Textbox Name="Textbox51">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>5- Identificación del auditor</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox47</rd:DefaultName>
+              <Left>8.81967cm</Left>
+              <Height>0.49417cm</Height>
+              <Width>6.65598cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <KeepTogether>true</KeepTogether>
           <Top>3.83738cm</Top>
           <Left>0.10467cm</Left>
-          <Height>2.20014cm</Height>
+          <Height>2.33243cm</Height>
           <Width>19.74069cm</Width>
           <ZIndex>7</ZIndex>
           <Style>
@@ -1012,39 +1044,6 @@
             </TopBorder>
           </Style>
         </Rectangle>
-        <Textbox Name="Textbox51">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>4- Identificación del auditor</Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox47</rd:DefaultName>
-          <Top>3.83738cm</Top>
-          <Left>9.66501cm</Left>
-          <Height>0.6cm</Height>
-          <Width>6.65598cm</Width>
-          <ZIndex>8</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
       </ReportItems>
       <Style>
         <Border>
