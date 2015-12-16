@@ -15,6 +15,18 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>cc_FACClientes.rdl</Name>
+      <FullPath>cc_FACClientes.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cc_NotasCreditoClientes2.rdl</Name>
+      <FullPath>cc_NotasCreditoClientes2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cc_ResumenCobros.rdl</Name>
+      <FullPath>cc_ResumenCobros.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>cn_BalanceGeneral.rdl</Name>
       <FullPath>cn_BalanceGeneral.rdl</FullPath>
     </ProjectItem>
@@ -81,10 +93,6 @@
     <ProjectItem>
       <Name>ts_ResumenDetalleDepositos.rdl</Name>
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>cc_ResumenCobros.rdl</Name>
-      <FullPath>cc_ResumenCobros.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

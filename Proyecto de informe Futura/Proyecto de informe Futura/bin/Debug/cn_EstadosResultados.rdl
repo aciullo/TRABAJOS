@@ -390,7 +390,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Estados de Resultado</Value>
+                  <Value>Estado de Resultados</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>20pt</FontSize>
