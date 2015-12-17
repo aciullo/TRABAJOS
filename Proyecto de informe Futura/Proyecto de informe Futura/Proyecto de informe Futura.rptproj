@@ -94,6 +94,14 @@
       <Name>ts_ResumenDetalleDepositos.rdl</Name>
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>cc_FacturasClientes.rdl</Name>
+      <FullPath>cc_FacturasClientes.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

@@ -1865,7 +1865,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>cc_NotasCreditoClientes</Value>
+                <Value>Facturas Credito</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>18pt</FontSize>
