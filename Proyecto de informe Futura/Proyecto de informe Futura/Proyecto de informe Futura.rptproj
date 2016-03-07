@@ -6,17 +6,33 @@
       <Name>DataSource1.rds</Name>
       <FullPath>DataSource1.rds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>sinapsis.rds</Name>
+      <FullPath>sinapsis.rds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSets>
     <ProjectItem>
       <Name>DataSet2.rsd</Name>
       <FullPath>DataSet2.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>SucursalCombo.rsd</Name>
+      <FullPath>SucursalCombo.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TipoComprobante.rsd</Name>
+      <FullPath>TipoComprobante.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
       <Name>cc_FACClientes.rdl</Name>
       <FullPath>cc_FACClientes.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cc_FacturasClientes.rdl</Name>
+      <FullPath>cc_FacturasClientes.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>cc_NotasCreditoClientes2.rdl</Name>
@@ -29,6 +45,10 @@
     <ProjectItem>
       <Name>cn_BalanceGeneral.rdl</Name>
       <FullPath>cn_BalanceGeneral.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>cn_EstadoPatrimonio.rdl</Name>
+      <FullPath>cn_EstadoPatrimonio.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>cn_EstadosResultados.rdl</Name>
@@ -83,6 +103,26 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Ranking.rdl</Name>
+      <FullPath>Ranking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report2.rdl</Name>
+      <FullPath>Report2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report3.rdl</Name>
+      <FullPath>Report3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_Producto_Usuario.rdl</Name>
+      <FullPath>vt_Producto_Usuario.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ts_ListaCheques.rdl</Name>
       <FullPath>ts_ListaCheques.rdl</FullPath>
     </ProjectItem>
@@ -95,12 +135,32 @@
       <FullPath>ts_ResumenDetalleDepositos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>cc_FacturasClientes.rdl</Name>
-      <FullPath>cc_FacturasClientes.rdl</FullPath>
+      <Name>vt_IngresoEgreso.rdl</Name>
+      <FullPath>vt_IngresoEgreso.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>vt_IngresoEgresoV1.rdl</Name>
+      <FullPath>vt_IngresoEgresoV1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_IngresoEgresoV2.rdl</Name>
+      <FullPath>vt_IngresoEgresoV2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_IvaVenta.rdl</Name>
+      <FullPath>vt_IvaVenta.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_SaldoCliente.rdl</Name>
+      <FullPath>vt_SaldoCliente.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_SaldoClienteV2.rdl</Name>
+      <FullPath>vt_SaldoClienteV2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_SaldoClienteV3.rdl</Name>
+      <FullPath>vt_SaldoClienteV3.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -114,7 +174,7 @@
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
-        <StartItem>cn_EstadosResultados.rdl</StartItem>
+        <StartItem>vt_IvaVenta.rdl</StartItem>
       </Options>
     </Configuration>
     <Configuration>

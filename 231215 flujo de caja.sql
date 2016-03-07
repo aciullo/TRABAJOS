@@ -38,24 +38,43 @@ group by cuenta
 having sum(debe-haber) <> 0 
 order by cuenta
 
-select * from #a
+--select * from #a
 
-select sum(saldo),p.codcuenta, p.nroplanilla
+--select sum(saldo*p.factor),pd.codgrupoint
 
+--from #a  a
+--INNER JOIN cn_planillasdet1 p
+--on a.cuenta=p.codcuenta
+--inner join cn_planillasdet pd 
+--on pd.nroplanilla=p.nroplanilla and p.idempresa=pd.idempresa
+--and p.codgrupo=pd.codgrupo
+----where p.nroplanilla=10
+
+--group by pd.codgrupoint
+
+--union all
+
+select sum(saldo*p.factor)saldo,pd.codgrupoint,pd.codgrupo,pd.descripcion
+into #b
 from #a  a
 INNER JOIN cn_planillasdet1 p
 on a.cuenta=p.codcuenta
---where p.nroplanilla=10
+inner join cn_planillasdet pd 
+on pd.nroplanilla=p.nroplanilla and p.idempresa=pd.idempresa
+and p.codgrupo=pd.codgrupo
+where p.nroplanilla=1
 
-group by p.codcuenta, p.nroplanilla
+group by pd.codgrupo ,pd.codgrupoint,pd.descripcion
 
 
 
-
-
-
-drop table #a
-
+select #b.saldo ,p.descripcion dspadre, #b.descripcion, #b.codgrupo
+from #b
+inner join 
+cn_planillasdet p 
+on #b.codgrupoint=p.codgrupo
+and p.idempresa=@empresa
+drop table #a,#b
 
 
 

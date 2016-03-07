@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="sinapsis">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=.\sqlexpress;Initial Catalog=Sinapsis2</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>63cbd855-22a1-4f69-bc78-e5ce84b0777b</DataSourceID>
+</RptDataSource>

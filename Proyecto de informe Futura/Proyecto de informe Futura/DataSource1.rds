@@ -2,8 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=SERVER-PC ;Initial Catalog=Futura2;User Id=FuturaApp; password= AppFutura</ConnectString>
-    <IntegratedSecurity>true</IntegratedSecurity>
+    <ConnectString>Data Source=.\sqlexpress;Initial Catalog=FUTURA</ConnectString>
   </ConnectionProperties>
   <DataSourceID>83491892-317e-4f2d-8750-173be4cefde9</DataSourceID>
 </RptDataSource>
