@@ -119,10 +119,6 @@
       <FullPath>Report3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>st_ListaProductoServivios.rdl</Name>
-      <FullPath>st_ListaProductoServivios.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ts_ListaCheques.rdl</Name>
       <FullPath>ts_ListaCheques.rdl</FullPath>
     </ProjectItem>
@@ -151,10 +147,6 @@
       <FullPath>vt_IvaVenta.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>vt_ListaClientes.rdl</Name>
-      <FullPath>vt_ListaClientes.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>vt_Producto_Usuario.rdl</Name>
       <FullPath>vt_Producto_Usuario.rdl</FullPath>
     </ProjectItem>
@@ -169,6 +161,10 @@
     <ProjectItem>
       <Name>vt_SaldoClienteV3.rdl</Name>
       <FullPath>vt_SaldoClienteV3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>vt_ListaClientes.rdl</Name>
+      <FullPath>vt_ListaClientes.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
