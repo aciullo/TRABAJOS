@@ -24,10 +24,6 @@
       <Name>TipoComprobante.rsd</Name>
       <FullPath>TipoComprobante.rsd</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>sinapsis.rsd</Name>
-      <FullPath>sinapsis.rsd</FullPath>
-    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -151,10 +147,6 @@
       <FullPath>vt_IvaVenta.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>vt_ListaClientes.rdl</Name>
-      <FullPath>vt_ListaClientes.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>vt_Producto_Usuario.rdl</Name>
       <FullPath>vt_Producto_Usuario.rdl</FullPath>
     </ProjectItem>
@@ -171,8 +163,8 @@
       <FullPath>vt_SaldoClienteV3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ResumenPedidoxTipoPed.rdl</Name>
-      <FullPath>ResumenPedidoxTipoPed.rdl</FullPath>
+      <Name>vt_ListaClientes.rdl</Name>
+      <FullPath>vt_ListaClientes.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
