@@ -52,7 +52,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Id Proveedor</Value>
+                              <Value>Id  Cliente</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -81,6 +81,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -127,6 +128,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -173,6 +175,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -219,6 +222,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -265,6 +269,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -311,6 +316,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -357,6 +363,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -403,6 +410,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -449,6 +457,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -495,6 +504,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -541,6 +551,7 @@
                         <RightBorder>
                           <Style>None</Style>
                         </RightBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -924,14 +935,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox15">
+                    <Textbox Name="Textbox45">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Total</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>8pt</FontSize>
@@ -944,7 +955,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <rd:DefaultName>Textbox45</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -970,7 +981,7 @@
                 <TablixCell />
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox83">
+                    <Textbox Name="Textbox46">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -988,7 +999,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox83</rd:DefaultName>
+                      <rd:DefaultName>Textbox46</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1265,8 +1276,8 @@
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
+    <PageHeight>21.59cm</PageHeight>
+    <PageWidth>35.56cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
     <RightMargin>2cm</RightMargin>
     <TopMargin>2cm</TopMargin>
@@ -1293,7 +1304,6 @@
         <QueryParameters>
           <QueryParameter Name="@IdEmpresa">
             <Value>=Parameters!IdEmpresa.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandText>select IdCliente
@@ -1315,65 +1325,60 @@ left JOIN bs_Barrios b	  ON b.IdBarrio=cl.IdBarrio
 left JOIN bs_Ciudades C   ON c.IdCiudad=cl.IdCiudad
 WHERE cl.activo=1
 and cl.IdEmpresa=@IdEmpresa
-ORDER BY cl.RazSocial
-</CommandText>
+ORDER BY cl.RazSocial</CommandText>
       </Query>
       <Fields>
         <Field Name="IdCliente">
           <DataField>IdCliente</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Razon">
           <DataField>Razon</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Contacto">
           <DataField>Contacto</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CargoContacto">
           <DataField>CargoContacto</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="RUC">
           <DataField>RUC</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Direccion">
           <DataField>Direccion</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Barrio">
           <DataField>Barrio</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Ciudad">
           <DataField>Ciudad</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Telefono">
           <DataField>Telefono</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Fax">
           <DataField>Fax</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
-        </Field>
-        <Field Name="Pais">
-          <DataField>Pais</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Email">
           <DataField>Email</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Estado">
           <DataField>Estado</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Empresa">
           <DataField>Empresa</DataField>
-          <rd:UserDefined>true</rd:UserDefined>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>

@@ -3,6 +3,7 @@
   <ConnectionProperties>
     <Extension>SQL</Extension>
     <ConnectString>Data Source=.\sqlexpress;Initial Catalog=FUTURA</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>83491892-317e-4f2d-8750-173be4cefde9</DataSourceID>
 </RptDataSource>
