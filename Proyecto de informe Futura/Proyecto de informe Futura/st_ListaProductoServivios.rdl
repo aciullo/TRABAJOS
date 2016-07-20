@@ -1210,7 +1210,7 @@ Select 'Todos' Descripcion, NULL IdtipoProducto</CommandText>
     </DataSet>
   </DataSets>
   <ReportParameters>
-    <ReportParameter Name="IdEmpresa">
+    <ReportParameter Name="idempresa">
       <DataType>String</DataType>
       <Prompt>Id Empresa</Prompt>
     </ReportParameter>

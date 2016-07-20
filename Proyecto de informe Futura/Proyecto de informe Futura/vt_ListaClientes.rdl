@@ -1388,7 +1388,7 @@ ORDER BY cl.RazSocial</CommandText>
       <DataType>String</DataType>
       <Prompt>empresa</Prompt>
     </ReportParameter>
-    <ReportParameter Name="IdEmpresa">
+    <ReportParameter Name="idempresa">
       <DataType>String</DataType>
       <Prompt>Id Empresa</Prompt>
     </ReportParameter>
