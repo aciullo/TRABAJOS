@@ -1130,7 +1130,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=Parameters!empresa.Value</Value>
+                  <Value>=Parameters!Empresa.Value</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -1288,13 +1288,9 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource1">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=FUTURA</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
-      </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>f9431368-324e-45c6-b446-d15b49307a84</rd:DataSourceID>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>5b6efb8c-1e9a-420c-b6a7-cfb047366d58</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -1302,8 +1298,8 @@
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@IdEmpresa">
-            <Value>=Parameters!IdEmpresa.Value</Value>
+          <QueryParameter Name="@idempresa">
+            <Value>=Parameters!idempresa.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandText>select IdCliente
@@ -1312,19 +1308,17 @@
 ,ISNULL(rtrim(Cargo),'')CargoContacto
 ,ISNULL(cl.Ruc,'')RUC
 ,ISNULL(rtrim(Direccion),'') Direccion 
-,ISNULL(rtrim(b.Descripcion),'') Barrio
+,ISNULL(rtrim(b.Descripcion),'') Barrio 
 ,ISNULL(rtrim(c.Descripcion),'') Ciudad
 ,ISNULL(rtrim(cl.Telefono),'') Telefono
 ,ISNULL(rtrim(cl.Fax),'') Fax
-,ISNULL(cl.Email,'') Email
+,ISNULL(cl.Email,'') Email   
 ,CASE cl.ACTIVO WHEN  1 THEN 'Activo' ELSE 'Inactivo' END Estado
-,e.empresa Empresa
 FROM vt_clientes cl
-INNER JOIN empresa e ON e.idempresa=cl.idempresa
 left JOIN bs_Barrios b	  ON b.IdBarrio=cl.IdBarrio
 left JOIN bs_Ciudades C   ON c.IdCiudad=cl.IdCiudad
 WHERE cl.activo=1
-and cl.IdEmpresa=@IdEmpresa
+and cl.IdEmpresa=@idempresa
 ORDER BY cl.RazSocial</CommandText>
       </Query>
       <Fields>
@@ -1376,19 +1370,15 @@ ORDER BY cl.RazSocial</CommandText>
           <DataField>Estado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Empresa">
-          <DataField>Empresa</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
   </DataSets>
   <ReportParameters>
-    <ReportParameter Name="empresa">
+    <ReportParameter Name="Empresa">
       <DataType>String</DataType>
       <Prompt>empresa</Prompt>
     </ReportParameter>
-    <ReportParameter Name="IdEmpresa">
+    <ReportParameter Name="idempresa">
       <DataType>String</DataType>
       <Prompt>Id Empresa</Prompt>
     </ReportParameter>
