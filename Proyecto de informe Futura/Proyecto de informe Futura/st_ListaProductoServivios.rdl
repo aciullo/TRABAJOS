@@ -1105,7 +1105,7 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=Futura</ConnectString>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=FuturaPP</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>
@@ -1117,7 +1117,7 @@
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@IdEmpresa">
+          <QueryParameter Name="@idempresa">
             <Value>=Parameters!IdEmpresa.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@TipoProducto">
@@ -1140,7 +1140,7 @@ FROM st_Producto prod
 left join st_Marca m on m.IdMarca=prod.marca
 inner JOIN empresa e ON e.idempresa=prod.idempresa
 left JOIN cp_proveedor p ON p.IdProveedor=prod.Proveedor
-WHERE prod.activo=1 and prod.IdEmpresa=@IdEmpresa and (prod.idTipo= @TipoProducto or @TipoProducto is null)
+WHERE prod.activo=1 and prod.IdEmpresa=@idempresa and (prod.idTipo= @TipoProducto or @TipoProducto is null)
 ORDER BY prod.IdProducto</CommandText>
       </Query>
       <Fields>
