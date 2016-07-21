@@ -1311,7 +1311,7 @@
 ,ISNULL(rtrim(b.Descripcion),'') Barrio 
 ,ISNULL(rtrim(c.Descripcion),'') Ciudad
 ,ISNULL(rtrim(cl.Telefono),'') Telefono
-,ISNULL(rtrim(cl.Fax),'') Fax
+,ISNULL(rtrim(cl.Fax),'') Fax 
 ,ISNULL(cl.Email,'') Email   
 ,CASE cl.ACTIVO WHEN  1 THEN 'Activo' ELSE 'Inactivo' END Estado
 FROM vt_clientes cl
