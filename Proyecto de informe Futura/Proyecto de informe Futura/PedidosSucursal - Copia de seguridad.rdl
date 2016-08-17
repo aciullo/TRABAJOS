@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="sinapsis">
+      <DataSourceReference>sinapsis</DataSourceReference>
+      <rd:DataSourceID>991749e8-9c52-40ae-8280-7a53dbfd9e7e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="dFecha">
+      <DataType>DateTime</DataType>
+      <Prompt>Desde Fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="hFecha">
+      <DataType>DateTime</DataType>
+      <Prompt>Hasta Fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Empresa">
+      <DataType>Integer</DataType>
+      <Prompt>Empresa</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>18pt</FontSize>
+          <Color>#1c3a70</Color>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.8381cm</Height>
+        <Value>Cantidad de Pedidos por Sucursal</Value>
+      </Textbox>
+      <Matrix Name="matrix1">
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.53968cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <RowGroupings>
+          <RowGrouping>
+            <Width>2.53968cm</Width>
+            <DynamicRows>
+              <ReportItems>
+                <Textbox Name="FECHA">
+                  <rd:DefaultName>FECHA</rd:DefaultName>
+                  <ZIndex>2</ZIndex>
+                  <Style>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <FontFamily>Tahoma</FontFamily>
+                    <Format>d</Format>
+                    <BorderColor>
+                      <Default>DimGray</Default>
+                    </BorderColor>
+                    <BackgroundColor>#60759b</BackgroundColor>
+                    <Color>White</Color>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!FECHA.Value</Value>
+                </Textbox>
+              </ReportItems>
+              <Subtotal>
+                <ReportItems>
+                  <Textbox Name="textbox4">
+                    <rd:DefaultName>textbox4</rd:DefaultName>
+                    <Style>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <FontFamily>Tahoma</FontFamily>
+                      <Format>d</Format>
+                      <BorderColor>
+                        <Default>DimGray</Default>
+                      </BorderColor>
+                      <BackgroundColor>#60759b</BackgroundColor>
+                      <Color>White</Color>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Value>Total</Value>
+                  </Textbox>
+                </ReportItems>
+              </Subtotal>
+              <Sorting>
+                <SortBy>
+                  <SortExpression>=Fields!FECHA.Value</SortExpression>
+                  <Direction>Ascending</Direction>
+                </SortBy>
+              </Sorting>
+              <Grouping Name="matrix1_FECHA">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!FECHA.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+            </DynamicRows>
+          </RowGrouping>
+        </RowGroupings>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <ReportItems>
+                <Textbox Name="SUCURSAL">
+                  <rd:DefaultName>SUCURSAL</rd:DefaultName>
+                  <ZIndex>4</ZIndex>
+                  <Style>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <FontFamily>Tahoma</FontFamily>
+                    <BorderColor>
+                      <Default>DimGray</Default>
+                    </BorderColor>
+                    <BackgroundColor>#60759b</BackgroundColor>
+                    <Color>White</Color>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!SUCURSAL.Value</Value>
+                </Textbox>
+              </ReportItems>
+              <Subtotal>
+                <ReportItems>
+                  <Textbox Name="textbox6">
+                    <rd:DefaultName>textbox6</rd:DefaultName>
+                    <ZIndex>3</ZIndex>
+                    <Style>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <FontFamily>Tahoma</FontFamily>
+                      <BorderColor>
+                        <Default>DimGray</Default>
+                      </BorderColor>
+                      <BackgroundColor>#60759b</BackgroundColor>
+                      <Color>White</Color>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Value>Total</Value>
+                  </Textbox>
+                </ReportItems>
+              </Subtotal>
+              <Sorting>
+                <SortBy>
+                  <SortExpression>=Fields!SUCURSAL.Value</SortExpression>
+                  <Direction>Ascending</Direction>
+                </SortBy>
+              </Sorting>
+              <Grouping Name="matrix1_SUCURSAL">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!SUCURSAL.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+            </DynamicColumns>
+            <Height>0.53333cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <DataSetName>sinapsis</DataSetName>
+        <Top>0.8381cm</Top>
+        <Width>7.61904cm</Width>
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox3">
+              <rd:DefaultName>textbox3</rd:DefaultName>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingBottom>2pt</PaddingBottom>
+                <FontFamily>Tahoma</FontFamily>
+                <BorderColor>
+                  <Default>DimGray</Default>
+                </BorderColor>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <Value>
+              </Value>
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <MatrixRows>
+          <MatrixRow>
+            <Height>0.53333cm</Height>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="textbox2">
+                    <rd:DefaultName>textbox2</rd:DefaultName>
+                    <ZIndex>1</ZIndex>
+                    <Style>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <FontFamily>Tahoma</FontFamily>
+                      <BorderColor>
+                        <Default>DimGray</Default>
+                      </BorderColor>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!CANTIDAD.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+          </MatrixRow>
+        </MatrixRows>
+      </Matrix>
+    </ReportItems>
+    <Height>2.43809cm</Height>
+  </Body>
+  <rd:ReportID>797aa041-dee8-4585-8bca-e924d65fe665</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="sinapsis">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT     a.Fecha AS FECHA, COUNT(a.IdPedido) AS CANTIDAD, b.Sucursal AS SUCURSAL
+FROM         tel_Pedidos AS a INNER JOIN
+             tel_Sucursal AS b ON a.IdEmpresa = b.IdEmpresa AND a.IdSucursal = b.IdSucursal
+where a.Fecha between @dFecha and @hFecha
+and a.IdEmpresa=@Empresa
+GROUP BY a.IdSucursal, b.Sucursal, a.Fecha
+ORDER BY a.Fecha</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@dFecha">
+            <Value>=Parameters!dFecha.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@hFecha">
+            <Value>=Parameters!hFecha.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Empresa">
+            <Value>=Parameters!Empresa.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>sinapsis</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="FECHA">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>FECHA</DataField>
+        </Field>
+        <Field Name="CANTIDAD">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CANTIDAD</DataField>
+        </Field>
+        <Field Name="SUCURSAL">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SUCURSAL</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>12.69841cm</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>es-ES</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
