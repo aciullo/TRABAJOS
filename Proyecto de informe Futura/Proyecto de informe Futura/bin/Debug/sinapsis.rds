@@ -3,6 +3,7 @@
   <ConnectionProperties>
     <Extension>SQL</Extension>
     <ConnectString>Data Source=.\sqlexpress;Initial Catalog=Sinapsis2</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>63cbd855-22a1-4f69-bc78-e5ce84b0777b</DataSourceID>
 </RptDataSource>

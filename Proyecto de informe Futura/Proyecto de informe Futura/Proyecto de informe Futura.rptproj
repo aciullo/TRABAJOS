@@ -103,6 +103,18 @@
       <FullPath>cp_ResumenPagos.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Estadisticas Cuadrantes.rdl</Name>
+      <FullPath>Estadisticas Cuadrantes.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PedidosSucursal.rdl</Name>
+      <FullPath>PedidosSucursal.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ranking de Pedidos.rdl</Name>
+      <FullPath>Ranking de Pedidos.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Ranking.rdl</Name>
       <FullPath>Ranking.rdl</FullPath>
     </ProjectItem>
@@ -171,8 +183,8 @@
       <FullPath>vt_SaldoClienteV3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>PedidosSucursal.rdl</Name>
-      <FullPath>PedidosSucursal.rdl</FullPath>
+      <Name>vt_FacturaCliente.rdl</Name>
+      <FullPath>vt_FacturaCliente.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
